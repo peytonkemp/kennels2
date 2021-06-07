@@ -3,10 +3,10 @@ import React from "react"
 import "./Kennel.css"
 import { AnimalProvider } from "./animal/AnimalProvider"
 import { AnimalList } from "./animal/AnimalList"
-// import { CustomerProvider } from "./customer/CustomerProvider"
-// import { CustomerList } from "./customer/CustomerList"
-// import { EmployeeProvider } from "./employee/EmployeeProvider"
-// import { EmployeeList } from "./employee/EmployeeList"
+import { CustomerProvider } from "./customers/CustomerProvider"
+import { CustomerList } from "./customers/CustomerList"
+import { EmployeeProvider } from "./employees/EmployeeProvider"
+import { EmployeeList } from "./employees/EmployeeList"
 // import { LocationProvider } from "./location/LocationProvider"
 // import { LocationList } from "./location/LocationList"
 import { NavBar } from "./nav/NavBar";
@@ -30,14 +30,20 @@ export const Kennel = () => (
             <AnimalProvider>
                 <AnimalList />
             </AnimalProvider>
-
+        </article>
+        <article className="customers">
+            <CustomerProvider>
+                <CustomerList />
+            </CustomerProvider>
+        </article>
+        <article className="employees">
+            <EmployeeProvider>
+                <EmployeeList />
+            </EmployeeProvider>
         </article>
     </>
 )
 
-            // <CustomerProvider>
-            //     <CustomerList />
-            // </CustomerProvider>
 
             // <EmployeeProvider>
             //     <EmployeeList />

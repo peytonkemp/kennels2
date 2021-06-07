@@ -4,6 +4,6 @@ import "./Customer.css"
 export const Customer = () => (
     <section className="customer">
         <h3 className="customer__name">Doodles</h3>
-        <div className="customer__breed">Breed: Poodle</div>
+        <div className="customer__address">Adress:</div>
     </section>
 )
