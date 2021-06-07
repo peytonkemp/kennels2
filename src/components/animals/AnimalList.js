@@ -23,7 +23,7 @@ export const AnimalList = () => {
                                 Name: {animal.name}
                             </div>
                             <div className="animal__breed">
-                                Breed: {animal.breed}
+                                Breed: {animal.breed} 
                             </div>
                         </div>
                     )
