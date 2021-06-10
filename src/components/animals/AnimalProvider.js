@@ -23,6 +23,7 @@ export const AnimalProvider = (props) => {
         })
             .then(getAnimals)
     }
+    
 
     /*
         You return a context provider which has the
